@@ -37,7 +37,7 @@ async function main() {
     // Prepare deployment transaction
     const deployOptions = {
       data: bytecode,
-      arguments: [initialSupply, account.address], // Initial pauser is the deployer
+      arguments: [account.address], // Initial pauser is the deployer
     };
 
     const createTransaction = PXXUToken.deploy(deployOptions);
